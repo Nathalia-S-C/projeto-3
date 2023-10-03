@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☼ Galeria Botânica ☼</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="imagens/icons/lotus.png">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="imagens/icons/sakura.png" alt="sakura" class="header_logo">
+
+        <span id="hamburguer" class="material-symbols-rounded">
+            menu
+        </span>
+
+        <nav id="itens_menu" class="header_nav">
+            <ul>
+                <li><a href="#">Menu 01</a></li>
+                <li><a href="#">Menu 02</a></li>
+                <li><a href="#">Menu 03</a></li>
+                <li><a href="#">Menu 04</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens_menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer (){
+            if(itens_menu.style.display == 'block'){
+                itens_menu.classList.remove('show');
+            }else{
+                itens_menu.classList.toggle('show');
+            }
+        }
+    </script>
+
+
+    <main class="fundo_main">
+        
+        <section class="d-flex justify-content-center align-items-center">
+            
+        <div>
+        <a href="index2.html" class="botao_main" target="_blank">Galeria</a>
+        </div>
+
+        </section>
+
+    </main>
+    
+    <footer >
+
+        <div class="footer">
+       <a href="#"> <div><img src="imagens/icons/whatsapp.png" alt="whatsapp" class="tamanho"></div> </a> 
+
+       <a href="#"> <div><img src="imagens/icons/facebook.png" alt="facebook" class="tamanho"></div> </a> 
+
+        <a href="#"> <div><img src="imagens/icons/instagram.png" alt="instagram" class="tamanho"></div> </a>
+
+        <a href="#"> <div><img src="imagens/icons/linkedin.png" alt="linkedin" class="tamanho"></div> </a>
+
+       <a href="#"> <div><img src="imagens/icons/github.png" alt="github" class="tamanho"></div> </a>
+        </div>
+
+        <p class="texto">♥ Elas na tech 2023 ♥</p>
+
+    </footer>
+
+</body>
+</html>

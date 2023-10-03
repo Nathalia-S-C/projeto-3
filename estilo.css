@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    background-color: #630137;
+}
+
+.header_logo{
+    width: 5em;
+    height: auto;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+}
+
+
+#hamburguer{
+    background-color: #730240;
+    color: #eed3d0;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header_nav{
+    background-color: #a3497b;
+    display: none;
+}
+
+.header_nav.show{
+    display: block;
+}
+
+.header_nav ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.3em;
+    letter-spacing: .15em;
+}
+
+.header_nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1em;
+    color: #f0e8e7;
+    text-shadow: #630237 -.12em .10em .11em;
+}
+
+.header_nav a:hover{
+    background-color: #830249;
+    color: white;
+}
+
+
+.full-height {
+    height: 100vh;
+}
+
+.fundo_main{
+    background-image: url(imagens/primavera1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    background-position: auto 10;
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+
+section a{
+    text-decoration: none;
+    color: #f3eceb;
+    font-size: 1.5em;
+    letter-spacing: .2em;
+    text-shadow: #13010b -.17em .13em .12em;
+}
+
+.botao_main{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao_main{
+    display: inline-block;
+    padding: 1.5em;
+    background-color: #730240;
+    border-radius: 15px;
+}
+
+.botao_main:hover{
+    background-color: #830249;
+    color: #fff;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.tamanho{
+    width: 5em;
+    height: 5em;
+    padding: .3em;
+}
+
+.texto{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: #FFFFFF;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+    filter: grayscale(40%);
+}
+
+@media screen and (min-width:48em){
+    #hamburguer{
+        display: none;
+    }
+
+    .fundo_main{
+        height: 100vh;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .9em;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        margin-right: 2em;
+        font-size: .9em;
+        background-color: #630137;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: .8em;
+    }
+
+    .tamanho{
+        width: 4em;
+        height: 4em;
+    }
+
+    .header_logo{
+        width: 4em;
+        height: 4em;
+    }
+
+    .fundo_main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .header_nav a{
+        border-radius: 7px;
+    }
+
+}
+
+/* CAROUSEL */
+
+div.container-fluid {
+    padding: 0;
+}
+
+div.flex {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
